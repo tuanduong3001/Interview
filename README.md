@@ -35,3 +35,6 @@ Regulazition, một cách cơ bản, là thay đổi mô hình một chút để
 Một kỹ thuật khác cùng hướng tiếp cận unsupervised learning đó là giảm số chiều (dimemsionality reduction). Dimensionality reduction là một cách để đơn giản hoá dữ liệu, giúp dữ liệu dễ trao đổi, tính toán nhanh hơn và dễ lưu trữ hơn.
 
 Về mặt ý tưởng, dimensionality reduction nhằm mô tả dữ liệu ngắn gọn hơn. Ví dụ như điểm GPA. Để đánh giá một sinh viên trong quá trình học, ta cần biết hàng chục lớp học sinh viên đó tham gia, hàng trăm bài kiểm tra và hàng ngàn bài tập mà sinh viên đó đã làm. Mỗi bài kiểm tra sẽ cho biết sinhh viên này hiểu được nội dung bài giảng đến đâu. Nhưng đối với nhà tuyển dụng việc đọc hết các điểm số này là quá sức. May mắn thay, ta có thể tổng hợp điểm số lại bằng cách lấy trung bình. Ta không cần quan tâm đến hàng đống điểm vừa rồi mà chỉ cần quan sát điểm GPA để đánh giá lực học của sinh viên đó. 
+
+## 6. Imbalanced dataset là gì? Liệt kê một số cách để đối phó với nó?
+Imbalanced dataset là tập dữ liệu có tỷ lệ các
