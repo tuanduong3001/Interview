@@ -37,4 +37,16 @@ Một kỹ thuật khác cùng hướng tiếp cận unsupervised learning đó 
 Về mặt ý tưởng, dimensionality reduction nhằm mô tả dữ liệu ngắn gọn hơn. Ví dụ như điểm GPA. Để đánh giá một sinh viên trong quá trình học, ta cần biết hàng chục lớp học sinh viên đó tham gia, hàng trăm bài kiểm tra và hàng ngàn bài tập mà sinh viên đó đã làm. Mỗi bài kiểm tra sẽ cho biết sinhh viên này hiểu được nội dung bài giảng đến đâu. Nhưng đối với nhà tuyển dụng việc đọc hết các điểm số này là quá sức. May mắn thay, ta có thể tổng hợp điểm số lại bằng cách lấy trung bình. Ta không cần quan tâm đến hàng đống điểm vừa rồi mà chỉ cần quan sát điểm GPA để đánh giá lực học của sinh viên đó. 
 
 ## 6. Imbalanced dataset là gì? Liệt kê một số cách để đối phó với nó?
-Imbalanced dataset là tập dữ liệu có tỷ lệ các
+Imbalanced dataset là tập dữ liệu có tỷ lệ các categories khác nhau. Ví dụ, một tập dữ liệu với các hình ảnh y tế mà chúng ta phát hiện trong một số bệnh thường sẽ có nhiều mẫu âm tính hơn dương tính, ví dụ: 98% hình ảnh không có bệnh và 2% hình ảnh bị bệnh.
+
+**Có các tuỳ chọn khác nhau để xử lý các imbalanced dataset:**
+- Oversampling hoặc undersampling
+- Data augmentation. Chúng ta có thể thêm data vào các categories ít thường xuyên hơn bằng cách sửa đổi data hiện có theo cách được kiểm soát. Trong dataset mẫu, chúng ta có thể lật hình ảnh bị bệnh hoặc thêm nhiễu vào bản sao của hình ảnh theo cách mà bệnh vẫn có thể nhìn thấy được.
+- Sử dụng các metrics thích hợp. Trong dataset mẫu, nếu chúng ta có một model luôn đưa ra các dự đoán tiêu cực, nó sẽ đạt được độ chính xác 98%. Ngoài ra còn có các metrics khác như độ chính xác, số lần truy cập và F-score để mô tả độ chính xác của một model tốt hơn khi sử dụng imbalanced dataset.
+
+## 7. Giải thích được sự khác biệt giữa supervised, unsupervised và reinforcement learning?
+**Supervised learning** là thuật toán dự đoán đầu ra (outcome) của một dữ liệu mới (new input) dựa trên các cặp (input, outcome) đã biết từ trước. Cặp dữ liệu này còn được gọi là (data, label), tức (dữ liệu, nhãn). Trong Supervised learning, chúng ta train một model để tìm hiểu về mối quan hệ giữa input và output data. Chúng ta cần có label data để có thể thực hiện được quá trình supervised learning.
+
+Với **Unsupervised learning**, chúng ta chỉ có unlabeled data. Thuật toán unsupervised learning sẽ dựa vào cấu trúc của dữ liệu để thực hiện một công việc nào đó, ví dụ như phân nhóm (clustering) hoặc giảm số chiều của dữ liệu (dimension reduction) để thuận tiện trong việc lưu trữ và tính toán. Unsupervised learning thường được sử dụng để khởi tạo các parameters của model khi chúng ta có rất nhiều unlabeled data và một phần nhỏ labeled data. Trước tiên, chúng ta train một Unsupervised Models và sau đó chúng ta sử dụng trọng số của models để train một supervised model.
+
+Trong **reinforcement learning**, model có một số input data và phần thưởng tuỳ thuộc vào output của model. Reinforcement learning là các bài toán giúp cho một hệ thống tự động xác định hành vi dựa trên hoàn cảnh để đạt được lợi ích cao nhất (maximizing the performance). Hiện tại, Reinforcement learning chủ yếu được áp dụng vào Lý Thuyết Trò Chơi (Game Theory), các thuật toán cần xác định nước đi tiếp theo để đạt được điểm số cao nhất. 
