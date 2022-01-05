@@ -50,3 +50,10 @@ Imbalanced dataset là tập dữ liệu có tỷ lệ các categories khác nha
 Với **Unsupervised learning**, chúng ta chỉ có unlabeled data. Thuật toán unsupervised learning sẽ dựa vào cấu trúc của dữ liệu để thực hiện một công việc nào đó, ví dụ như phân nhóm (clustering) hoặc giảm số chiều của dữ liệu (dimension reduction) để thuận tiện trong việc lưu trữ và tính toán. Unsupervised learning thường được sử dụng để khởi tạo các parameters của model khi chúng ta có rất nhiều unlabeled data và một phần nhỏ labeled data. Trước tiên, chúng ta train một Unsupervised Models và sau đó chúng ta sử dụng trọng số của models để train một supervised model.
 
 Trong **reinforcement learning**, model có một số input data và phần thưởng tuỳ thuộc vào output của model. Reinforcement learning là các bài toán giúp cho một hệ thống tự động xác định hành vi dựa trên hoàn cảnh để đạt được lợi ích cao nhất (maximizing the performance). Hiện tại, Reinforcement learning chủ yếu được áp dụng vào Lý Thuyết Trò Chơi (Game Theory), các thuật toán cần xác định nước đi tiếp theo để đạt được điểm số cao nhất. 
+## 8. Một số yếu tố giải thích về sự thành công và sự gia tăng gần đây của Deep Learning là gì?
+Sự thành công của Deep Learning trong thập kỷ qua có thể được giải thích bằng ba yếu tố chính:
+- Thêm Data. Sự sẵn có khối lượng lớn labeled datasets cho phép chúng tôi train các models với nhiều parameters hơn và đạt được điểm số tối tân. Các thuật toán ML khác không scale cũng như Deep Learning khi nói đến kích thước dataset.
+- GPU. Các Training models trên GPU có thể giảm thời gian đào tạo theo của magnitude so với việc training trên CPU. Hiện tại, các models tiên tiến được đào tạo trên GPU hoặc thậm chí trên phần cứng chuyên dụng.
+- Cải tiến trong thuật toán. ReLU activation, dropout và complex network architectures cũng là những yếu tố quan trọng.
+## Data augmentation là gì? Cho một số ví dụ?
+Data augmentation là 
