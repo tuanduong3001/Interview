@@ -23,7 +23,7 @@ Ensembles là sự kết hợp của nhiều models để tạo ra một dự đ
 - Đưa ra một trọng lượng khác nhau cho mỗi sample training set. Nếu điều này được thực hiện lặp đi lặp lại, hãy kiểm tra trọng lượng của các samples thông qua lỗi ensembles, hay còn gọi là boosting.
 
 ## 4. Regularization là gì? Bạn có thể đưa ra một số ví dụ về kỹ thuật regularization không?
-Regulazition, một cách cơ bản, là thay đổi mô hình một chút để tránh overfitting trong khi vẫn giữ được tính tổng quát của nó (tính tổng quát là tính mô tả được nhiều dữ liệu, trong cả tập training và test). Một cách cụ thể hơn, ta sẽ tìm cách di chuyển nghiệm của bài toán tối ưu hàm mất mát tới một điểm gần nó. Hướng di chuyển sẽ là hướng làm cho mô hình ít phức tạp hơn mặc dù giá trị của hàm mất mát có tăng lên một chút.
+Regularization, một cách cơ bản, là thay đổi mô hình một chút để tránh overfitting trong khi vẫn giữ được tính tổng quát của nó (tính tổng quát là tính mô tả được nhiều dữ liệu, trong cả tập training và test). Một cách cụ thể hơn, ta sẽ tìm cách di chuyển nghiệm của bài toán tối ưu hàm mất mát tới một điểm gần nó. Hướng di chuyển sẽ là hướng làm cho mô hình ít phức tạp hơn mặc dù giá trị của hàm mất mát có tăng lên một chút.
 
 **Một số kỹ thuật Regularization:**
 - L1 cố gắng giảm thiểu absolute value của các parameters trong models. Nó tạo ra sparse parameters.
