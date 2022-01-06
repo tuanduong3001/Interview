@@ -55,5 +55,20 @@ Sự thành công của Deep Learning trong thập kỷ qua có thể được g
 - Thêm Data. Sự sẵn có khối lượng lớn labeled datasets cho phép chúng tôi train các models với nhiều parameters hơn và đạt được điểm số tối tân. Các thuật toán ML khác không scale cũng như Deep Learning khi nói đến kích thước dataset.
 - GPU. Các Training models trên GPU có thể giảm thời gian đào tạo theo của magnitude so với việc training trên CPU. Hiện tại, các models tiên tiến được đào tạo trên GPU hoặc thậm chí trên phần cứng chuyên dụng.
 - Cải tiến trong thuật toán. ReLU activation, dropout và complex network architectures cũng là những yếu tố quan trọng.
-## Data augmentation là gì? Cho một số ví dụ?
-Data augmentation là 
+## 9. Data augmentation là gì? Cho một số ví dụ?
+Data augmentation là một kỹ thuật tổng hợp data mới bằng cách sửa đổi data hiện có theo cách mà target không thay đổi, hoặc nó được thay đổi theo cách đã biết.
+
+Computer vision là một trong những fields mà việc Data augmentation rất hữu ích. Có nhiều sửa đổi mà chúng ta có thể thực hiện đối với hình ảnh:
+- Thay đổi kích thước
+- Lật ngang hoặc dọc
+- Quay
+- Thêm tiếng ồn
+- Biến dạng
+- Sửa đổi màu sắc
+- Mỗi vấn đề cần có một cách optimize Data augmentation tuỳ chỉnh. Ví dụ: trong OCR, việc thực hiện flips sẽ thay đổi văn bản và sẽ không mang lại lợi ích; tuy nhiên, thay đổi kích thước và xoay nhỏ có thể hữu ích.
+## 10. Convolutional Neural Network là gì? Có thể sử dụng chúng ở đâu?
+Convolutional Neural Network (CNNs-Mạng nơ-ron tích chập) là một trong những mô hình Deep Learning tiên tiến giúp cho chúng ta xây dựng được những hệ thống thông minh với độ chính xác cao như hiện nay như hệ thống xử lý ảnh lớn như Facebook, Google hay Amazon đã đưa vào sản phẩm của mình những chức năng thông minh như nhận diện khuôn mặt người dùng, phát triển xe hơi tự lái hay drone giao hàng tự động. CNN được sử dụng nhiều trong các bài toán nhận dạng các object trong ảnh.
+
+Các convolutional layer có các parameter (kernel) đã được học để tự điều chỉnh lấy ra những thông tin chính xác nhất mà không cần chọn các feature. Trong hình ảnh ví dụ trên, ma trận bên trái là một hình ảnh trắng đen được số hoá. Ma trận có kích thước 5x5 và mỗi điểm ảnh có giá trị 1 hoặc 0 là giao điểm của dòng và cột. Convolution hay tích chập là nhân từng phần tử trong ma trận 3.
+
+Sliding Window hay còn gọi là kernel, filter hoặc feature detect là một ma trận có kích thước nhỏ như trong ví dụ trên là 3x3. Convolution hay tích chập là nhân từng phần tử bên trong ma trận 3x3 với ma trận bên trái. Kết quả được một ma trận gọi là Convoled feature được sinh ra từ việc nhận ma trận Filter với ma trận ảnh 5x5 bên trái.
