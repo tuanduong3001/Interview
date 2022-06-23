@@ -1,4 +1,4 @@
-# 10 Câu hỏi phỏng vấn thường gặp trong ngành Machine Learning (Học Máy)
+# Câu hỏi phỏng vấn thường gặp trong ngành Machine Learning (Học Máy)
 ## 1. Tại sao chúng ta cần một validation set and test set? Sự khác biệt của chúng là gì?
 **Khi tranining một model, chúng ta chia dữ liệu có sẵn thành ba bộ riêng biệt:**
 - Traning dataset được sử dụng để phù hợp với các thông số của model. Tuy nhiên, độ chính xác mà chúng tôi đạt được trên Training Set là không đáng tin cậy để dự đoán nếu model cũng sẽ chính xác trên sample mới.
@@ -72,3 +72,18 @@ Convolutional Neural Network (CNNs-Mạng nơ-ron tích chập) là một trong 
 Các convolutional layer có các parameter (kernel) đã được học để tự điều chỉnh lấy ra những thông tin chính xác nhất mà không cần chọn các feature. Trong hình ảnh ví dụ trên, ma trận bên trái là một hình ảnh trắng đen được số hoá. Ma trận có kích thước 5x5 và mỗi điểm ảnh có giá trị 1 hoặc 0 là giao điểm của dòng và cột. Convolution hay tích chập là nhân từng phần tử trong ma trận 3.
 
 Sliding Window hay còn gọi là kernel, filter hoặc feature detect là một ma trận có kích thước nhỏ như trong ví dụ trên là 3x3. Convolution hay tích chập là nhân từng phần tử bên trong ma trận 3x3 với ma trận bên trái. Kết quả được một ma trận gọi là Convoled feature được sinh ra từ việc nhận ma trận Filter với ma trận ảnh 5x5 bên trái.
+## 11. So sánh giữa Git và Github
+| Git | Github |
+|---|---|
+| Git là một công cụ kiểm soát phiên bản phân tán có thể quản lý lịch sử mã nguồn của lập trình viên. | GitHub là một công cụ dựa trên đám mây được phát triển xung quanh công cụ Git. |
+| Một nhà phát triển cài đặt công cụ Git cục bộ. | GitHub là một dịch vụ trực tuyến để lưu trữ code và đẩy từ máy tính chạy công cụ Git. |
+| Git tập trung vào kiểm soát phiên bản và chia sẻ code. | GitHub tập trung vào lưu trữ code nguồn tập trung. |
+| Nó là một công cụ dòng lệnh. | Nó được quản lý thông qua web. |
+| Nó tạo điều kiện với một giao diện máy tính để bàn được gọi là Git Gui. | Nó cũng tạo điều kiện với giao diện máy tính để bàn được gọi là GitHub Gui. |
+| Git không cung cấp bất kỳ tính năng quản lý người dùng nào. | GitHub được tích hợp sẵn tính năng quản lý người dùng. |
+| Nó có tính năng cấu hình công cụ. | Nó có một thị trường cho cấu hình công cụ. |
+## 12. Phân biệt các câu lệnh git
+git clone: Tạo 1 bản sao của kho lưu trữ github trong máy tính cá nhân
+git fork: Sao chép kho lưu trữ vào tài khoản github cá nhân
+git pull: Nạp kho lưu trữ được sửa đổi cuối cùng
+git push: Trả lại kho lưu trữ sau khi sửa đổi nó
