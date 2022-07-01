@@ -83,7 +83,7 @@ Sliding Window hay còn gọi là kernel, filter hoặc feature detect là một
 | Git không cung cấp bất kỳ tính năng quản lý người dùng nào. | GitHub được tích hợp sẵn tính năng quản lý người dùng. |
 | Nó có tính năng cấu hình công cụ. | Nó có một thị trường cho cấu hình công cụ. |
 ## 12. Phân biệt các câu lệnh git
-git clone: Tạo 1 bản sao của kho lưu trữ github trong máy tính cá nhân
-git fork: Sao chép kho lưu trữ vào tài khoản github cá nhân
-git pull: Nạp kho lưu trữ được sửa đổi cuối cùng
-git push: Trả lại kho lưu trữ sau khi sửa đổi nó
+- git clone: Tạo 1 bản sao của kho lưu trữ github trong máy tính cá nhân
+- git fork: Sao chép kho lưu trữ vào tài khoản github cá nhân
+- git pull: Nạp kho lưu trữ được sửa đổi cuối cùng
+- git push: Trả lại kho lưu trữ sau khi sửa đổi nó
